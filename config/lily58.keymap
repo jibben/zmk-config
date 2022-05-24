@@ -9,10 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+// Configure mod-tap duration to be 150ms.
+&mt {
+    tapping-term-ms = <150>;
+};
+
 / {
-    &mt {
-        tapping-term-ms = <150>;
-    };
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -32,6 +34,7 @@
 			>;
 		};
 
+        // Lower layer is function and media controls, mainly.
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
@@ -48,6 +51,7 @@
 			>;
 		};
 
+        // Raised layer is navigation, mainly.
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
