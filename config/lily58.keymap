@@ -71,15 +71,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |   -   |
-// |       |     |  ^  |      | HOME | PGUP |                   |  <-  |   v   |   ^   |  ->  |       |   +   |
-// |       | <-  |  v  |  ->  | END  | PGDN |        |  |       |  +   |   [   |   ]   |      |       | ENTER |
-//                     |      |      |      |  TAB   |  |       |      |       |       |
+// |       |     |  ^  |      | HOME | PGUP |                   |      |   <-  |   v   |   ^  |  ->   |   +   |
+// |       | <-  |  v  |  ->  | END  | PGDN |        |  |       |      |   [   |   ]   |      |       | ENTER |
+//                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &kp MINUS
-&trans    &none &kp UP &none  &kp HOME &kp PG_UP                       &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &none      &kp KP_PLUS
-&trans    &kp LEFT &kp DOWN &kp RIGHT  &kp END  &kp PG_DN    &trans   &trans    &kp KP_PLUS &kp LBKT  &kp RBKT  &trans   &trans    &kp RET
-                        &trans  &trans  &trans    &kp TAB   &trans    &trans      &trans    &trans
+&trans    &none &kp UP &none  &kp HOME &kp PG_UP                     &none       &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT   &kp KP_PLUS
+&trans    &kp LEFT &kp DOWN &kp RIGHT  &kp END  &kp PG_DN    &trans   &none      &kp KP_PLUS &kp LBKT  &kp RBKT  &trans   &trans    &kp RET
+                        &trans  &trans  &trans  &kp trans    &trans    &trans      &trans    &trans
 			>;
 		};
 	};
